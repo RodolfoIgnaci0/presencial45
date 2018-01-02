@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id="saludo"></p>
+    <input type="text" name="" value="" id="hora">
+    <button type="button" name="button" onclick="procesar()">OK</button>
+    <script>
+    function procesar(){
+      var x = document.getElementById("hora").value;
+      console.log(x);
+      if (x > 6 && x < 12){
+        document.getElementById("saludo").innerHTML = "buenos dias";
+      }else if(x >= 12 && x < 20){
+        document.getElementById("saludo").innerHTML = "buenos tardes";
+      }else{
+        document.getElementById("saludo").innerHTML = "buenos noches";
+      }
+    }
+    </script>
+  </body>
+</html>
